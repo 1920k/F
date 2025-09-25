@@ -3,11 +3,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "dev": "vite", 
+    "build": "vite build", 
     "preview": "vite preview",
-     "dev": "concurrently \"npm run dev --prefix frontend\" \"node backend/server.js\""
-
-    
+    "start-backend": "node backend/server.js"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,6 +17,7 @@
     "tailwindcss": "^3.4.0",
     "autoprefixer": "^10.4.0",
     "@tailwindcss/postcss": "^2.0.0",
-    "postcss": "^8.4.0"
+    "postcss": "^8.4.0",
+    "concurrently": "^8.2.0"
   }
 }
